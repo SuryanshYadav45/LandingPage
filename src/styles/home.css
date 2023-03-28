@@ -1,0 +1,283 @@
+.carousel {
+    background-color: #2a2828;
+    padding: 0px 3%;
+}
+
+.divcar {
+    background: url("../assests/carouseImage.jpg");
+    margin: 0px 15px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.content {
+    background-color: rgb(102, 102, 102, 0.5);
+    margin: 200px 25px;
+    backdrop-filter: blur(10px);
+}
+
+.content h1,
+h6 {
+    font-family: 'Overpass', sans-serif;
+    text-align: end;
+    color: white;
+}
+
+.content h1 {
+    padding: 50px 30px 0px 30px;
+    font-size: 68px;
+    font-weight: 600;
+}
+
+.content h6 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #F1F1F1;
+    margin-top: -10px;
+    padding: 0px 30px 0px 30px;
+}
+
+.content p {
+    text-align: end;
+    padding: 0px 30px 50px 30px;
+    margin-top: -3px;
+    color: #F1F1F1;
+}
+
+.btndiv {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    margin-top: -30px;
+}
+
+.homebtn {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid black;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.homebtn:after {
+    content: "";
+    background-color: #2a2828;
+    width: 170px;
+    height: 53px;
+    z-index: -1;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: 0.2s;
+}
+
+.homebtn:hover:after {
+    width: 180px;
+    height: 60px;
+    top: 0;
+    left: 0;
+}
+
+.cardcarousel {
+    position: relative;
+    margin-top: -120px;
+}
+
+.slider {
+    margin: 0px 10%;
+}
+
+.inner,
+.vcard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 20px;
+    max-width: 350px;
+    height: 380px;
+    box-shadow: 2px 2px 6px #2a2828;
+    transition: 800ms ease;
+    background-color: white;
+}
+
+.verticalcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    display: none;
+}
+
+.inner:hover,
+.vcard:hover {
+    background-color: #2a2828;
+    color: white;
+}
+
+.inner h3,
+.vcard h3 {
+    font-weight: 900;
+    font-family: "Overpass", sans-serif;
+
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.inner p,
+.vcard p {
+    color: #666666;
+    font-size: 17px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.couch {
+    width: 85px;
+    height: 85px;
+    margin: 20px 0px;
+}
+
+/* responsive */
+@media (max-width:500px) {
+    .verticalcard {
+        display: flex;
+    }
+
+    .carousel {
+        padding-bottom: 20px;
+    }
+
+    .content {
+        margin: 100px 10px;
+        width: 350px;
+    }
+
+    .cardcarousel {
+        margin-top: 0px;
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .homebtn {
+        width: 120px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .homebtn:after {
+        width: 110px;
+        height: 43px;
+    }
+
+    .homebtn:hover:after {
+        width: 120px;
+        height: 50px;
+
+    }
+}
+
+
+@media (max-width:1003px) and (min-width:793px) {
+    .content h1 {
+        font-size: 62px;
+    }
+
+    .content h6 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:793px) and (min-width:667px) {
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content h6 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:667px) and (min-width:593px) {
+    .content h1 {
+        font-size: 43px;
+    }
+
+    .content h6 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:593px) and (min-width:526px) {
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content h6 {
+        font-size: 15px;
+        margin-top: 3px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:526px) and (min-width:463px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content h6 {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:463px) {
+    .content h1 {
+        font-size: 40px;
+        font-weight: 800;
+
+    }
+
+    .content h6 {
+        font-size: 25px;
+        margin-top: 2px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+}

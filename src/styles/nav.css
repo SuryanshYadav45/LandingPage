@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    font-family:  'Poppins', sans-serif;
+}
+nav {
+    background-color: #2a2828;
+   
+}
+.container-fluid
+{
+    margin: 0px 2%;
+}
+.navbar-brand {
+    color: white;
+}
+
+.search {
+    margin-top: 5px;
+    color: white;
+}
+
+.nav-item {
+    margin: 0px 4px;
+    
+}
+.anchor{
+    position: relative;
+}
+
+.anchor:after{
+    content:"";
+    position:absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    /* transition: 700ms; */
+    
+}
+.anchor:hover:after {
+    width: 100%;
+}
+
+.socialicon {
+    color: white;
+    font-size: 25px;
+    padding: 0px 4px;
+    transition: 400ms ease;
+}
+.socialicon:hover{
+    color:#3b5998
+}
+
+
+@media (max-width:767px) {
+    
+    .nav-item:hover {
+        border-bottom: none;
+
+    }
+
+    .nav-item {
+        text-align: center;
+        padding: 9px 0px;
+    }
+
+    .nav-item a {
+        font-size: 20px;
+    }
+
+    .search {
+        margin-left: 50%;
+    }
+
+    .divIcon {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 10rem;
+    }
+}
